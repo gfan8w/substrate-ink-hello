@@ -28,15 +28,19 @@ active toolchain
 stable-x86_64-apple-darwin (default)
 rustc 1.58.0 (02072b482 2022-01-11)
 
-2）编译：
+2）安装 cargo-contract 工具
+cargo install cargo-contract --vers ^0.16 --force --locked
+
+
+3）编译：
 cargo +nightly contract build --release
 或 cargo +nightly-2021-01-16 contract build --release
 测试：cargo +nightly test
 
-3）运行contract-node
+4）运行contract-node
 clone 下载 substrate-contract-node，cargo build -- --dev --tmp
 
-4）访问
+5）访问
 https://paritytech.github.io/canvas-ui
 上传 flipper.contract
 实例化，
